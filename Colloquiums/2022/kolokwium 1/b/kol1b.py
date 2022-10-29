@@ -27,6 +27,7 @@ def GetAns(bucket, curr_word):
     return cnt
 
 
+
 def f(T):
     maxi = None # długość najdłuzszego stringa
     n = len(T)

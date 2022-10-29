@@ -1,6 +1,7 @@
 from kol3atesty import runtests
 from queue import PriorityQueue
 
+
 def Dijkstra(G,s,t):
     n = len(G)
     q = PriorityQueue()

@@ -25,6 +25,7 @@ def normalize(word):
     if ord(sec[0]) < ord(word[0]): return sec
     return word
 
+
 def GetAns(bucket):
     maxi = 0
     curr = bucket[0]

@@ -4,7 +4,6 @@
 # Następnie przechodzę bfsem po tak powstałym grafie, za każdym razem przetwarzając dany wierzchołek 
 # "usuwam" krawędzie prowadzące z niego do innych wierzchołków.
 
-from kolutesty import runtests
 from collections import deque
 
 def Reverse(G): 

@@ -1,5 +1,8 @@
 from kol1btesty import runtests
 
+# słowa wkładam do bucketu odpowiadającego długosci słowa
+# w każdym buckecie z osobna sprawdzam ilość anagramów
+
 def CheckAnagrams(s1,s2):
     cnt = [0] * 27
     for i in s1:
@@ -19,12 +22,13 @@ def GetAns(bucket, curr_word):
             t.append(word)
             cnt += 1
     for word in t: bucket.remove(word)
-
+    # jeśli te słowa zostały już sprawdzone, to nie ma sensu sprawdzać ich jeszcze raz
+    # bo nie będą już należeć do zbioru anagramów innego słowa, bo gdyby należały, to to słowo znalazłoby się też w tablicy t
     return cnt
 
 
 def f(T):
-    maxi = None
+    maxi = None # długość najdłuzszego stringa
     n = len(T)
     for i in range(n):
         if maxi is None or len(T[i]) > maxi:
